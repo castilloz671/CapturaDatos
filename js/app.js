@@ -165,6 +165,7 @@ inputFiltrar.addEventListener('keyup', function() {
 });
 
 limpiar.addEventListener('click', (e) => {
+    e.preventDefault();
     inputNombre.value = '';
     inputApellido.value = '';
     inputMatricula.value = '';
