@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Captura de Datos</title>
+</head>
+<body>
+    <h1>Talendig - Lista de Estudiantes</h1>
+    <p>Lista de estudiantes del Bootcamp FullStack</p>
+
+    <div class="main-container">
+        <div class="form-container">
+            <h2>Formulario</h2>
+            <form action="">
+                <label for="nombre">Nombres:</label>
+                <input type="text" name="nombre" id="nombre" placeholder="Ingrese Nombre" required /> 
+                <label for="apellido">Apellidos: </label>
+                <input type="text" name="apellido" id="apellido" placeholder="Ingrese Apellido" required>
+                <label for="matricula">Matricula: </label>
+                <input type="text" name="matricula" id="matricula" placeholder="Ingrese Matricula" required>
+                <label for="curso">Curso: </label>
+                <input type="text" name="curso" id="curso" placeholder="Ingrese Curso" required>
+                <label for="nota">Nota: </label>
+                <input type="number" name="nota" id="nota" placeholder="Ingrese Nota" required>
+                <div class="div-submit">
+                    <input type="submit" value="Agregar" id="agregar">
+                    <input type="submit" value="Limpiar" id="limpiar">
+                </div>
+            </form>
+        </div>        
+
+        <div class="container">
+            <div class="filter-container">
+                <label for="filtrar">Buscar:</label>
+                <input type="text" name="filtrar" id="filtrar" placeholder="Ingrese un nombre">
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>N°</th>
+                        <th>Nombres</th>
+                        <th>Apelidos</th>
+                        <th>Matricula</th>
+                        <th>Curso</th>
+                        <th>Nota</th>
+                        <th>Accion</th>
+                    </tr>
+                </thead>
+                <tbody id="tbdata">
+                    
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+    <script src="/js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
