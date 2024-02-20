@@ -65,8 +65,11 @@ agregar.addEventListener('click', (e) => {
     MostrarEstudiantes();
 });
 
+//const botonAgregar = document.getElementById('agregar');
+
 tbdata.addEventListener('click', (e) => {
     if (e.target.value === 'Editar') {
+    agregar.value = 'Editar';
         const indice = e.target.parentNode.parentNode.rowIndex - 1;
         const estudiante = estudiantes[indice];
         LlenarCampos(estudiante);
@@ -90,6 +93,7 @@ function Limpiar() {
     inputMatricula.value = '';
     inputCurso.value = '';
     inputNota.value = '';
+    agregar.value = 'Agregar';
 }
 
 function MostrarEstudiantes() {
@@ -173,4 +177,5 @@ limpiar.addEventListener('click', (e) => {
     inputNota.value = '';
     inputMatricula.disabled = false;
     editando = false;
+    agregar.value = 'Agregar';
 })
